@@ -1,0 +1,11 @@
+.form {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--secundary-color);
+	padding: 55px 0;
+	transition: 1s;
+}
