@@ -1,0 +1,44 @@
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 50%;
+	margin: 5rem 0;
+	transition: 1s;
+}
+
+.form-register {
+	transform: translateX(-100%);
+	opacity: 0;
+	z-index: -1;
+}
+
+.container.move .form-register {
+	transform: translateX(0%);
+	opacity: 1;
+	z-index: 1;
+}
+
+.container.move .form-login {
+	transform: translateX(100%);
+	opacity: 0;
+	z-index: -1;
+}
+
+@media (max-width: 768px) {
+	form {
+		width: 100%;
+		height: 100%;
+		justify-content: space-evenly;
+	}
+
+	.form-register {
+		position: absolute;
+		justify-content: space-evenly;
+	}
+
+	.login-container.move .form-register {
+		z-index: 10;
+	}
+}

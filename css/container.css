@@ -1,0 +1,23 @@
+.container {
+	position: relative;
+	height: 480px;
+	width: 748px;
+	box-shadow: 0 5px 20px #A0A0A0;
+	border-radius: 12px;
+	overflow: hidden;
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 75vw;
+		height: 75vh;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		width: 100vw;
+		height: 100vh;
+		box-shadow: none;
+	}
+}
